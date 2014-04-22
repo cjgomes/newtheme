@@ -23,7 +23,7 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<a href="<?php bloginfo('home'); ?>"><img src="<?php echo (get_option('logo_url')) ? get_option('logo_url') : get_bloginfo('template_url') . '/imgs/logo.png' ?>" alt="<?php bloginfo('name'); ?>"/></a>
 			<!--<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>-->
 		</div>
 
